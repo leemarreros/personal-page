@@ -664,6 +664,14 @@ div.phone img {
     text-align: center;
     font-size: 22px;
   }
+
+  .userInfo img{
+    max-width: 55px;
+  }
+
+  .userInfo h1{
+    font-size: 17px;
+  }
 }
 
 @media all and (max-width:500px) {
@@ -672,6 +680,18 @@ div.phone img {
   }
   .articleCont h1 {
     font-size: 17px;
+  }
+
+  .userInfo img{
+    max-width: 30px;
+  }
+
+  .userInfo h1{
+    font-size: 13px;
+  }
+
+  .commentDescription h1 {
+    font-size: 12px;
   }
 }
 /*END*/

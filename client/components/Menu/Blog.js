@@ -60,6 +60,7 @@ class Blog extends React.Component{
 
   onAddComment(){
     console.log(this.state.valueTextArea);
+    if (this.state.valueTextArea==="") return;
     posts[this.state.currentPost].comments.push({
       description: this.state.valueTextArea,
       author: 'Hans S.',
