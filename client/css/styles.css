@@ -696,3 +696,34 @@ div.phone img {
 }
 /*END*/
 /*--------------------------------*/
+
+/*RESOURCES*/
+
+.wrapperResources {
+  width: 90%;
+  font-family: Avenir;
+  font-size: 14px;
+}
+
+.eachSource div:nth-child(1){
+  text-transform: uppercase;
+  /*font-weight: 600;*/
+}
+
+.wrapperLinks {
+  margin-left: 3%;
+}
+
+.wrapperLinks a {
+  text-decoration: none;
+
+}
+
+.wrapperLinks h1 {
+  font-weight: 100;
+  color: black;
+  font-size: 18px;
+}
+
+/*END*/
+/*--------------------------------*/
