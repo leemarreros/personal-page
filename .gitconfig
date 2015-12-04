@@ -1,0 +1,7 @@
+[alias]
+	ci = commit
+	s = status
+	p = push
+	o = origin
+	m = master
+	a = add
