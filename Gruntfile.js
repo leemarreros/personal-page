@@ -41,5 +41,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', ['less']);
-  grunt.registerTask('build', ['uglify']);
+  grunt.registerTask('build', ['uglify', 'cssmin']);
 }

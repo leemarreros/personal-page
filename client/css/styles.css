@@ -501,12 +501,11 @@ div.phone img {
 .post {
   display: flex;
   flex-direction: column;
-
+  align-items:space-between;
 }
 
 .post > span:nth-child(1) p {
   font-weight: 100;
-  background-color:yellow;
   margin-left: -5%;
   font-size: 16px;
 }
@@ -543,7 +542,11 @@ div.phone img {
 }
 
 .commentWrapper {
-
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
 }
 
 .commentContent {
@@ -552,6 +555,8 @@ div.phone img {
   margin-bottom: 2%;
   align-items: center;
   justify-content: center;
+  max-width: 800px;
+  border-radius: 4px;
 }
 
 .userInfo {
@@ -559,8 +564,7 @@ div.phone img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding: 1%;
 }
 
 .userInfo img{
@@ -568,6 +572,7 @@ div.phone img {
   max-height: 83px;
   width: 100%:
   height:auto;
+  margin: 3px;
 }
 
 .userInfo h1 {
@@ -586,6 +591,58 @@ div.phone img {
   font-size: 15px;
   font-weight: 100;
   text-align: justify;
+}
+
+.wrapperComment {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 90%;
+  align-self: flex-end;
+  height: auto;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  border: black solid 1px;
+}
+
+.wrapperComment > div:nth-child(1) {
+  flex: 5;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.inputComment {
+  width: 100%;
+  height: 80px;
+  font-family: Avenir;
+  font-size: 18px;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  border: none;
+  padding: 5px;
+}
+
+.btAddComment {
+  flex: 1;
+  height: 80px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.btAddComment div{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.btAddComment:active {
+  background-color: grey;
 }
 
 @media all and (max-width:1000px) {

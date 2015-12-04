@@ -10,7 +10,8 @@ class Blog extends React.Component{
       readingPost: false,
       currentPost: null,
       recent: true,
-      popular: false
+      popular: false,
+      valueTextArea: ''
     };
   }
 
@@ -53,6 +54,25 @@ class Blog extends React.Component{
     return res;
   }
 
+  onCommenting() {
+    this.setState({commenting: !this.state.commenting});
+  }
+
+  onAddComment(){
+    console.log(this.state.valueTextArea);
+    posts[this.state.currentPost].comments.push({
+      description: this.state.valueTextArea,
+      author: 'Hans S.',
+      img: './img2xOpt/profile-pic-comment.png'
+    });
+    this.setState({valueTextArea: ''});
+  }
+
+  handleAreaText(event, value) {
+    this.setState({valueTextArea: event.target.value});
+    console.log(event.target.value);
+  }
+
   render() {
     return (
       <div className='wrapperBlog'>
@@ -86,7 +106,17 @@ class Blog extends React.Component{
                 );
               })}
             </div>
-            <span>Add a comment</span>
+            <span onClick={this.onCommenting.bind(this)}>Add a comment</span>
+            {this.state.commenting ?
+              <div className='wrapperComment'>
+                <div><textarea className='inputComment' type='text' value={this.state.valueTextArea} onChange={this.handleAreaText.bind(this)}/></div>
+                <div className='btAddComment' onClick={this.onAddComment.bind(this)}>
+                  <div>
+                    Add
+                  </div>
+                </div>
+              </div>
+              : null}
           </div>
         </div>
         :
