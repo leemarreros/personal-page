@@ -486,7 +486,107 @@ div.phone img {
   font-weight: 100;
   font-size: 22px;
 }
+
 /*Posts*/
+.wrapperCurrentPost {
+  display: flex;
+  flex-direction: column;
+  font-family: Avenir;
+}
+
+.wrapperCurrentPost > span:nth-child(1) h1 {
+  text-align: right;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.post > span:nth-child(1) p {
+  font-weight: 100;
+  background-color:yellow;
+  margin-left: -5%;
+  font-size: 16px;
+}
+
+.headerpost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*justify-content:center;*/
+}
+
+.headerpost span p {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.imageWrapper img {
+  max-width: 33px;
+  max-height: 33px;
+  width: 100%;
+  height: auto;
+  padding-right: 14%;
+}
+
+.post span:nth-child(3) p {
+  text-align: justify;
+  font-size: 22px;
+}
+
+.commentWrapper {
+
+}
+
+.commentContent {
+  border: black solid 1px;
+  display: flex;
+  margin-bottom: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.userInfo img{
+  max-width: 83px;
+  max-height: 83px;
+  width: 100%:
+  height:auto;
+}
+
+.userInfo h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 17px;
+  margin: 0px;
+}
+
+.commentDescription {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.commentDescription h1 {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: justify;
+}
 
 @media all and (max-width:1000px) {
   .articleCont h1 {
