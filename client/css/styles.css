@@ -415,6 +415,7 @@ div.ipad img, div.desktop img {
   max-height: 476px;
   max-width: 524px;
   margin: 2% 0% 2% 0;
+  opacity: 1;
 }
 
 div.phone img {
@@ -423,6 +424,11 @@ div.phone img {
   max-height: 741px;
   max-width: 371px;
   margin: 2% 0% 2% 0;
+  opacity: 1;
+}
+
+.loadingPic {
+  opacity: 0;
 }
 
 /*END CARROUSEL*/
@@ -726,4 +732,87 @@ div.phone img {
 }
 
 /*END*/
+/*--------------------------------*/
+
+
+/* Spinner*/
+.spinner-3 {
+      height: 100px;
+      position: relative;
+      top:50%;
+      right:25%;
+    }
+    .spinner-3 .spinner {
+      width: 100px;
+      height: 100px;
+    }
+    .spinner-3 .spinner:before, .spinner-3 .spinner:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 40px;
+      height: 40px;
+      content: "";
+      border-radius: 20px;
+    }
+    .spinner-3 .spinner:before {
+      left: 0;
+      background-color: #507990;
+      animation: spinner-3-left 1s infinite linear;
+    }
+    .spinner-3 .spinner:after {
+      right: 0;
+      background-color: #0D0E31;
+      animation: spinner-3-right 1s infinite ease-in-out;
+    }
+
+    /* left ball */
+    @keyframes spinner-3-left {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      25% {
+        transform: translate(30px, 0);
+      }
+
+      50% {
+        transform: translate(30px, -30px);
+      }
+
+      75% {
+        transform: translate(30px, 0);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    /* right ball */
+    @keyframes spinner-3-right {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      25% {
+        transform: translate(-30px, 0);
+      }
+
+      50% {
+        transform: translate(-30px, 30px);
+      }
+
+      75% {
+        transform: translate(-30px, 0);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+/*END SPINNERS*/
 /*--------------------------------*/
