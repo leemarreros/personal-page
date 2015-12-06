@@ -70,8 +70,8 @@ class Portfolio extends React.Component{
             <div className='shapp' onClick={this._onClick.bind(this, 'shapp')}>
               {this.state.shapp ? <h1> &#9650; </h1> : <h1> &#9660; </h1>}
               <div>
-                <a href='' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[1] + '.png'}/></a>
-                <a href='' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[0] + '.png'}/></a>
+                <a href='https://invis.io/AK577IKVJ' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[1] + '.png'}/></a>
+                <a href='https://github.com/steveleec/shapp' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[0] + '.png'}/></a>
               </div>
             </div>
             {this.state.shapp ? <Carrousel images={imagesShapp} activated={this.state.shapp} device={'phone'}/> : null}

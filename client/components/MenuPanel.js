@@ -18,7 +18,8 @@ class MenuPanel extends React.Component{
       blog: false,
       resources: false,
       current: 'home',
-      buttonsArray: ['home','portfolio','blog','resources'],
+      // buttonsArray: ['home','portfolio','blog','resources'],
+      buttonsArray: ['home','portfolio','resources'],
       windowWidth: window.innerWidth,
       defaultDropMenu: 'home',
       menuOpened: false
@@ -78,9 +79,9 @@ class MenuPanel extends React.Component{
           }
         </div>
         <div className='line'><hr/></div>
+        {this.state.blog && <Blog />}
         {this.state.home && <Home />}
         {this.state.portfolio && <Portfolio />}
-        {this.state.blog && <Blog />}
         {this.state.resources && <Resources />}
       </div>
       );
