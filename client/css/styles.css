@@ -335,6 +335,14 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     width: 750px;
     height: 96px;
   }
+  .descriptionApp {
+    width: 750px;
+  }
+
+  .descriptionApp p {
+    font-size: 18px;
+  }
+
 }
 
 @media all and (max-width:1000px) {
@@ -346,6 +354,14 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     margin-left: 18px;
     font-size: 19px;
   }
+  .descriptionApp {
+    width: 650px;
+  }
+
+  .descriptionApp p {
+    font-size: 16px;
+  }
+
 }
 
 @media all and (max-width:750px) {
@@ -362,6 +378,14 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     margin-left: 17px;
     font-size: 15px;
   }
+  .descriptionApp {
+    width: 460px;
+  }
+
+  .descriptionApp p {
+    font-size: 14px;
+  }
+
 }
 
 @media all and (max-width:550px) {
@@ -380,16 +404,32 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     margin-left: 14px;
     font-size: 13px;
   }
+
+  .descriptionApp {
+    width: 380px;
+  }
+
+  .descriptionApp p {
+    font-size: 13px;
+  }
 }
 
 /*CARROUSEL*/
 /*--------------------------------*/
 .wrapperCarrousel{
   width: 100%;
-  /*display: flex;
+  display: flex;
+  flex-direction: column;
   align-items:center;
-  justify-content:center;*/
+  justify-content:center;
 }
+
+.descriptionApp p {
+  font-family: Avenir;
+  text-align: left;
+  font-weight: 100;
+}
+
 
 .wrapperCarrousel span {
   margin: 0px 1% 0px 1%;

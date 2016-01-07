@@ -64,14 +64,14 @@ class MenuPanel extends React.Component{
         <div className='buttonsWrapper'>
           { this.state.windowWidth > 500 ?
               this.state.buttonsArray.map(function(button, i) {
-                return <span key={i} onClick={this.handleClick.bind(this, button)} style={ selectedButtons[i] ? styles.buttonSelectedNor : {'borderBottomWidth': 0, 'color': '#000'} }>
+                return <span key={i} onClick={this.handleClick.bind(this, button)} style={ selectedButtons[i] ? styles.buttonSelectedNor : {'borderBottomWidth': 0, 'color': '#000', 'cursor': 'pointer'} }>
                           <h1 style={ selectedButtons[i] ? {'fontWeight':'bold'} :null }>{button.toUpperCase()}</h1>
                        </span>
               }, this) :
               <div className='dropMenuWrapper' onClick={this.dropMenuHandler.bind(this)}>
-                {this.state.menuOpened ? null : <span><h1 style= {styles.currentButton}>{ this.state.defaultDropMenu.toUpperCase() } &nbsp; &#9660;</h1></span>}
+                {this.state.menuOpened ? null : <span style={{'cursor': 'pointer'}}><h1 style= {styles.currentButton}>{ this.state.defaultDropMenu.toUpperCase() } &nbsp; &#9660;</h1></span>}
                 {this.state.menuOpened ? this.state.buttonsArray.map((button, i)=>{
-                            return <span key={i} onClick={this.handleClick.bind(this, button)}>
+                            return <span key={i} onClick={this.handleClick.bind(this, button)} style={{'cursor': 'pointer'}}>
                                     <h1 style={ selectedButtons[i] ? styles.buttonSelectedMin :null }> {button.toUpperCase()} </h1>
                                    </span>
                         }, this): null}
@@ -94,7 +94,8 @@ var styles = {
   buttonSelectedNor: {
     'borderBottomWidth': 3,
     'borderBottomColor': '#353C5F',
-    'color': '#353C5F'
+    'color': '#353C5F',
+    'cursor': 'pointer',
   },
   currentButton: {
     'fontWeight':'bold',

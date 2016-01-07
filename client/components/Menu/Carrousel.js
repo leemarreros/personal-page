@@ -53,6 +53,9 @@ class Carrousel extends React.Component{
   render() {
     return (
       <div className='wrapperCarrousel'>
+        <div className='descriptionApp'>
+          <p>{this.props.text}</p>
+        </div>
         <div className={this.props.device}>
           <span onClick={this._onClick.bind(this, 'prev')}><div>◀</div></span>
              <img style={this.state.pictureLoaded ? {opacity: 1} : {opacity: 0}} onLoad={this.onPictureLoaded.bind(this, this.state.currentI)} src={rootImages + this.props.images[this.state.currentI]}/>
@@ -67,7 +70,7 @@ class Carrousel extends React.Component{
 var styles = {
   pictureLoaded: {
     opacity: 1
-  }
+  },
 }
 
 module.exports = Carrousel;
