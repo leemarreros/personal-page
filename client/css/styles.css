@@ -329,18 +329,21 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
   align-items:center;
   justify-content: space-between;
 }
-
+.descriptionApp p {
+    font-size: 21px;
+}
 @media all and (max-width:1250px) {
   div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     width: 750px;
     height: 96px;
   }
   .descriptionApp {
-    width: 750px;
+    width: 710px;
   }
 
   .descriptionApp p {
     font-size: 18px;
+    margin-left: 10px;
   }
 
 }
@@ -355,11 +358,12 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     font-size: 19px;
   }
   .descriptionApp {
-    width: 650px;
+    width: 610px;
   }
 
   .descriptionApp p {
     font-size: 16px;
+    margin-left: 10px;
   }
 
 }
@@ -379,11 +383,12 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     font-size: 15px;
   }
   .descriptionApp {
-    width: 460px;
+    width: 420px;
   }
 
   .descriptionApp p {
     font-size: 14px;
+    margin-left: 10px;
   }
 
 }
@@ -406,11 +411,12 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
   }
 
   .descriptionApp {
-    width: 380px;
+    width: 340px;
   }
 
   .descriptionApp p {
     font-size: 13px;
+    margin-left: 10px;
   }
 }
 
@@ -422,6 +428,8 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
   flex-direction: column;
   align-items:center;
   justify-content:center;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
 .descriptionApp p {
@@ -450,9 +458,9 @@ div.ipad, div.desktop, div.phone {
 }
 
 div.ipad img, div.desktop img {
-  width: 70%;
+  width: 85%;
   height: auto;
-  max-height: 476px;
+  max-height: 550px;
   max-width: 524px;
   margin: 2% 0% 2% 0;
   opacity: 1;
@@ -471,6 +479,10 @@ div.phone img {
   opacity: 0;
 }
 
+.wrapperLoading {
+  width: 70%;
+  height: auto;
+}
 /*END CARROUSEL*/
 /*--------------------------------*/
 

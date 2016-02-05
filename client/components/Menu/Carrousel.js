@@ -2,7 +2,7 @@
 import React from 'react';
 
 
-var rootImages = '../../img2xOpt/'
+var rootImages = 'http://d2ildvc0jxqpdv.cloudfront.net/';
 
 class Carrousel extends React.Component{
   constructor(props) {
@@ -58,8 +58,7 @@ class Carrousel extends React.Component{
         </div>
         <div className={this.props.device}>
           <span onClick={this._onClick.bind(this, 'prev')}><div>◀</div></span>
-             <img style={this.state.pictureLoaded ? {opacity: 1} : {opacity: 0}} onLoad={this.onPictureLoaded.bind(this, this.state.currentI)} src={rootImages + this.props.images[this.state.currentI]}/>
-            {this.state. pictureLoaded ? null : <section className="spinner-3"><div className="spinner"></div></section>}
+             <img onLoad={this.onPictureLoaded.bind(this, this.state.currentI)} src={rootImages + this.props.images[this.state.currentI]}/>
           <span onClick={this._onClick.bind(this, 'next')}><div>▶</div></span>
         </div>
       </div>
