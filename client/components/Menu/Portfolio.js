@@ -42,13 +42,20 @@ class Portfolio extends React.Component{
       <div className='wrapperPortfolio'>
         <div className='wrapperBar'>
 
-            <div className='fairyt' style={{'cursor': 'pointer'}}>
-              {this.state.fairyt ? <h1>   </h1> : <h1>   </h1>}
+            <div className='mystery' style={{'cursor': 'pointer'}}>
+              {this.state.mystery ? <h1>   </h1> : <h1>   </h1>}
+              <div><a href='https://github.com/steveleec/mystery-meal' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[0] + '.png'}/></a></div>
+            </div>
+            <Carrousel text={contentApp[3]} images={imagesMystery} activated={this.state.mystery} device={'phone'}/>
+
+            <div className='shapp' style={{'cursor': 'pointer'}}>
+              {this.state.shapp ? <h1>   </h1> : <h1>   </h1>}
               <div>
-                <a href='https://invis.io/CQ2MAEFJB' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[1] + '.png'}/></a>
+                <a href='https://invis.io/4E578D9FZ' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[1] + '.png'}/></a>
+                <a href='https://github.com/steveleec/shapp' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[0] + '.png'}/></a>
               </div>
             </div>
-            <Carrousel text={contentApp[0]} images={imagesFairyt} activated={this.state.fairyt} device={'ipad'}/>
+            <Carrousel text={contentApp[4]} images={imagesShapp} activated={this.state.shapp} device={'phone'}/>
 
             <div className='prk' style={{'cursor': 'pointer'}}>
               {this.state.prk ? <h1>   </h1> : <h1>   </h1>}
@@ -65,20 +72,13 @@ class Portfolio extends React.Component{
             </div>
             <Carrousel text={contentApp[2]} images={imagesSlck} activated={this.state.slck} device={'desktop'}/>
 
-            <div className='mystery' style={{'cursor': 'pointer'}}>
-              {this.state.mystery ? <h1>   </h1> : <h1>   </h1>}
-              <div><a href='https://github.com/steveleec/mystery-meal' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[0] + '.png'}/></a></div>
-            </div>
-            <Carrousel text={contentApp[3]} images={imagesMystery} activated={this.state.mystery} device={'phone'}/>
-
-            <div className='shapp' style={{'cursor': 'pointer'}}>
-              {this.state.shapp ? <h1>   </h1> : <h1>   </h1>}
+            <div className='fairyt' style={{'cursor': 'pointer'}}>
+              {this.state.fairyt ? <h1>   </h1> : <h1>   </h1>}
               <div>
-                <a href='https://invis.io/4E578D9FZ' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[1] + '.png'}/></a>
-                <a href='https://github.com/steveleec/shapp' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[0] + '.png'}/></a>
+                <a href='https://invis.io/CQ2MAEFJB' target="_blank" onClick={()=>{smallIconClicked= true;}}><img src={imagesRoot + smallIconBar[1] + '.png'}/></a>
               </div>
             </div>
-            <Carrousel text={contentApp[4]} images={imagesShapp} activated={this.state.shapp} device={'phone'}/>
+            <Carrousel text={contentApp[0]} images={imagesFairyt} activated={this.state.fairyt} device={'ipad'}/>
         </div>
       </div>
       );

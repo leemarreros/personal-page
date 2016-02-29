@@ -15,7 +15,7 @@ class Home extends React.Component{
     return (
       <div className='wrapperHome'>
         <span><h1>BIO</h1></span>
-        <span><h1>&emsp; I used to teach Finance in my educational startup AFINES back then in my country, Peru. I became a Software Engineer in the Bay Area. I want to take a piece of SV’s culture and spread it around my country. #makersquaregrad </h1></span>
+        <span><h1>&emsp; I used to teach Finance in my educational startup AFINES back then in my country, Peru. I became a Software Engineer in the Bay Area. I want to take a piece of SV’s culture to spread it in my country #makersquaregrad. </h1></span>
         <span><h1>TECHNICAL EXPERTISE</h1></span>
         <span><h1>&emsp; STRONG</h1></span>
         <span><h1>Javascript (ES5, ES6), React/Flux, React-native, Flexbox, MongoDB, Promises, Grunt, Gulp, Web Perfomance O., Framer, Sketch, NodeJS, Github, Selenium.</h1></span>
