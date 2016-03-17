@@ -57,9 +57,9 @@ class Carrousel extends React.Component{
           <p>{this.props.text}</p>
         </div>
         <div className={this.props.device}>
-          <span onClick={this._onClick.bind(this, 'prev')}><div>◀</div></span>
+          <span onClick={this._onClick.bind(this, 'prev')}><div style={{'cursor': 'pointer'}}>◀</div></span>
              <img onLoad={this.onPictureLoaded.bind(this, this.state.currentI)} src={rootImages + this.props.images[this.state.currentI]}/>
-          <span onClick={this._onClick.bind(this, 'next')}><div>▶</div></span>
+          <span onClick={this._onClick.bind(this, 'next')}><div style={{'cursor': 'pointer'}}>▶</div></span>
         </div>
       </div>
       );

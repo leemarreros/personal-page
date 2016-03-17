@@ -320,7 +320,11 @@ div.shapp {
   background-image: url("../../img2xOpt/shapp-bar.png");
 }
 
-div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
+div.poll {
+  background-image: url("../../img2xOpt/poll-bar.png");
+}
+
+div.fairyt, div.prk, div.slck, div.mystery, div.shapp, div.poll {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 900px;
@@ -333,7 +337,7 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
     font-size: 21px;
 }
 @media all and (max-width:1250px) {
-  div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
+  div.fairyt, div.prk, div.slck, div.mystery, div.shapp, div.poll {
     width: 750px;
     height: 96px;
   }
@@ -349,7 +353,7 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
 }
 
 @media all and (max-width:1000px) {
-  div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
+  div.fairyt, div.prk, div.slck, div.mystery, div.shapp, div.poll {
     width: 650px;
     height: 83px;
   }
@@ -369,7 +373,7 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
 }
 
 @media all and (max-width:750px) {
-  div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
+  div.fairyt, div.prk, div.slck, div.mystery, div.shapp, div.poll {
     width: 460px;
     height: 59px;
   }
@@ -394,7 +398,7 @@ div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
 }
 
 @media all and (max-width:550px) {
-  div.fairyt, div.prk, div.slck, div.mystery, div.shapp {
+  div.fairyt, div.prk, div.slck, div.mystery, div.shapp, div.poll {
     width: 380px;
     height: 49px;
   }
@@ -460,8 +464,7 @@ div.ipad, div.desktop, div.phone {
 div.ipad img, div.desktop img {
   width: 85%;
   height: auto;
-  max-height: 550px;
-  max-width: 524px;
+  max-width: 750px;
   margin: 2% 0% 2% 0;
   opacity: 1;
 }
