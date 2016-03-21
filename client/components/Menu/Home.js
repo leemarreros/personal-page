@@ -24,7 +24,7 @@ class Home extends React.Component{
         })}
         </div>
         <span><h1>&emsp; EXPERIENCED</h1></span>
-        <span><h1>Angular.JS, Backbone, Heroku, Firebase, Async programming, Java, Python, Jasmine, JUnit, Socket.io, CoffeeScript.</h1></span>
+        <span><h1>Angular.JS, Backbone, Heroku, Firebase, Async programming, Java, Python, Jasmine, JUnit, Socket.io, CoffeeScript, Typescript, Android S., TDD, Webpack. </h1></span>
         <div className='imgWrapper'> {imagesEx.map((icon, i) => {
           return <img key={i} className='icons' src={'../../img2xOpt/' + icon + '.png'}/>
         })}
